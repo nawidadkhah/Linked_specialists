@@ -1,3 +1,55 @@
-.login-page {
-    background-color: aqua;
+.background-image-login {
+    background-image: url(./Images/SharedScreenshot.jpg);
+    background-size: 1000px;
+    /* position: absolute; */
+}
+
+.auth-side {
+    margin: 0 0px 0 700px;
+    width: 350px;
+    height: 400px;
+    background: rgba(66, 64, 64, 0.7);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.cards {
+    width: 120px;
+    height: 60px;
+    margin: 0 120px;
+    padding: 30px 0;
+    background: rgba(66, 64, 64, 0);
+}
+
+.logo {
+    width: 100px;
+    height: 90px;
+    margin: 0px 0 20px 0;
+}
+
+.title {
+    width: 250px;
+    margin: 0px -60px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.inputs {
+    width: 120px;
+    height: 30px;
+    margin: 0px 0px 0 -15px;
+}
+
+.inputs input {
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid orange;
+    outline: none;
+    padding: 0 10px;
+}
+
+.labels {
+    background: rgba(66, 64, 64, 0);
+    direction: ltr;
 }
