@@ -1,8 +1,10 @@
+import {Auth} from './Pages/Auth'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      hello
+      <Auth />
     </div>
   );
 }
