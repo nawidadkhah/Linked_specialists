@@ -54,11 +54,6 @@ img {
     align-items: center;
 }
 
-p::first-letter {
-    font-size: 200%;
-    color: #8A2BE2;
-}
-
 .inputs {
     width: 150px;
     height: 30px;
@@ -90,4 +85,16 @@ p::first-letter {
 
 .notification {
     height: 0%;
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 80%;
+    left: -20px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }

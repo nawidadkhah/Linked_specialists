@@ -1,11 +1,22 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Logo from '../Images/logo.jpg'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import  '../Components/Button/Button.jsx'
 import './Auth.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+
 
 export const Auth = () => {
+
+    const [showPassword, setShowPassword] = useState(false);
+    const [password, setPassword] = useState('');
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
 
 const handleSubmit= (e)=>{
     e.preventDefault()
@@ -64,17 +75,21 @@ const notify = (msg, type) => {
                                 className="infoInput"
                                 name="username"
                                 placeholder="نام کاربری"
-
                             />
                         <div className='labels labels2'>
                             <label htmlFor="password">: رمز عبور</label>
                         </div> 
+                            <div className="password-input-container">
                             <input
-                                type="email"
+                                type={showPassword? "text" : "password"}
                                 className="infoInput"
                                 name="password"
                                 placeholder="رمز عبور"
                             />
+                            <span className="password-toggle-icon" onClick={togglePasswordVisibility}>
+                                <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+                            </span>
+                            </div>
                             <button
                                 className="button"
                                 id="infoButton"
