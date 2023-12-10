@@ -1,12 +1,18 @@
+@font-face {
+    font-family: BKoodak;
+    src: url("../../Fonts/BKoodkBd.ttf") format("truetype");
+}
+
 .button {
     width: 90px;
     height: 30px;
-    background-color: rgb(234, 155, 71);
+    background-color: #C3B1E1;
     border-radius: 20px;
     margin: 20px 20px;
     cursor: pointer;
     transition: .2s ease-in-out;
-    border: 1px solid orange;
+    border: 1px solid #917db1;
+    font-family: BKoodak;
 }
 
 .submit {
@@ -19,7 +25,6 @@
 .button:hover {
     width: 90px;
     height: 30px;
-    background-color: rgb(190, 116, 37);
+    background-color: #917db1;
     border-radius: 20px;
-    /* margin: 10px 20px; */
 }

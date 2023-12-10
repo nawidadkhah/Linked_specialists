@@ -9,9 +9,8 @@
 }
 
 .background-image-login {
-    background-image: url(./Images/SharedScreenshot.jpg);
+    background-image: url(../Images/login_background.jpg);
     background-size: 1000px;
-    /* position: absolute; */
 }
 
 .auth-side {
@@ -23,12 +22,8 @@
 }
 
 .cards {
-    /* width: 0px; */
     height: 50px;
-    /* background-color: aqua; */
     margin: auto;
-    /* padding: ; */
-    /* background: rgba(60, 7, 7, 0); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +31,6 @@
 }
 
 .logo {
-    /* width: 100px; */
     height: 90px;
     margin: 0px 0 20px 20px;
 }
@@ -46,18 +40,23 @@ img {
 }
 
 .title {
-    /* width: 250px; */
     margin: 0px -70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Btitr
+    font-family: Btitr;
+    color: aliceblue;
 }
 
 .title span {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
 }
 
 .inputs {
@@ -69,26 +68,24 @@ img {
 .inputs input {
     margin: 0px 0px 20px -30px;
     border-radius: 8px;
-    border: 1px solid orange;
+    border: 1px solid #C3B1E1;
     outline: none;
     padding: 0 10px;
     direction: rtl;
 }
 
 .labels {
-    /* margin: 0 0px; */
     font-family: BKoodak;
     padding: 0 80px;
+    color: aliceblue;
     width: 100%;
-    background: rgba(66, 64, 64, 0);
 }
 
 .labels2 {
-    /* margin: 0 0px; */
+    color: aliceblue;
     font-family: BKoodak;
     padding: 0 90px;
     width: 100%;
-    background: rgba(66, 64, 64, 0);
 }
 
 .notification {

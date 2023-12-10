@@ -1,16 +1,17 @@
 import React from 'react'
-import './Auth.css'
-import Logo from './Images/logo.jpg'
-import 'react-toastify/dist/ReactToastify.css';
-import  '../Components/Button'
+import Logo from '../Images/logo.jpg'
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import  '../Components/Button/Button.jsx'
+import './Auth.css'
 
 export const Auth = () => {
 
-    const handleSubmit= (e)=>{
-        e.preventDefault()
-        notify(".کاربر وارد شد", "success")
-    }
+const handleSubmit= (e)=>{
+    e.preventDefault()
+    notify("کاربر با موفقیت وارد شد.", "success")
+    notify("رمزعبور یا نام کاربری اشتباه است.", "error")
+}
 
 const notify = (msg, type) => {
     if (type === "error") {
@@ -22,7 +23,7 @@ const notify = (msg, type) => {
             pauseOnHover: false,
             draggable: false,
             progress: undefined,
-            theme: "light",
+            theme: "light"
         });
     }
     else if (type === "success") {
@@ -34,8 +35,7 @@ const notify = (msg, type) => {
             pauseOnHover: false,
             draggable: false,
             progress: undefined,
-            theme: "light",
-            className:"notification"
+            theme: "light"
         });
     }
 }
@@ -83,9 +83,8 @@ const notify = (msg, type) => {
                             >
                                 ثبت
                             </button>
-                            <ToastContainer />
+                            <ToastContainer limit={5} rtl className={"notification"} />
                     </form>
-                       
                  </div>
             </div>
           </div>
