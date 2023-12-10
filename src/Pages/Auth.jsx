@@ -1,21 +1,18 @@
 import {React, useState} from 'react'
 import Logo from '../Images/logo.jpg'
 import { ToastContainer, toast } from 'react-toastify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import 'react-toastify/dist/ReactToastify.css';
 import  '../Components/Button/Button.jsx'
 import './Auth.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-
 
 export const Auth = () => {
+const [showPassword, setShowPassword] = useState(false);
 
-    const [showPassword, setShowPassword] = useState(false);
-    const [password, setPassword] = useState('');
-
-    const togglePasswordVisibility = () => {
+const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
-    };
+};
 
 
 const handleSubmit= (e)=>{
