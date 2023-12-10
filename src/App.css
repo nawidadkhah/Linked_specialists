@@ -1,6 +1,11 @@
 * {
     margin: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     /* background-color: white; */
+}
+
+@font-face {
+    font-family: BKoodak;
+    src: url("./Fonts/BKoodkBd.ttf") format("truetype");
 }

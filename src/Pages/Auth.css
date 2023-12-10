@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Btitr;
+    src: url("../Fonts/BTitrBd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: BKoodak;
+    src: url("../Fonts/BKoodkBd.ttf") format("truetype");
+}
+
 .background-image-login {
     background-image: url(./Images/SharedScreenshot.jpg);
     background-size: 1000px;
@@ -7,49 +17,80 @@
 .auth-side {
     margin: 0 0px 0 700px;
     width: 350px;
-    height: 400px;
+    height: 500px;
     background: rgba(66, 64, 64, 0.7);
     border-radius: 0px 0px 20px 20px;
 }
 
 .cards {
-    width: 120px;
-    height: 60px;
-    margin: 0 120px;
-    padding: 30px 0;
-    background: rgba(66, 64, 64, 0);
+    /* width: 0px; */
+    height: 50px;
+    /* background-color: aqua; */
+    margin: auto;
+    /* padding: ; */
+    /* background: rgba(60, 7, 7, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 115px;
 }
 
 .logo {
-    width: 100px;
+    /* width: 100px; */
     height: 90px;
-    margin: 0px 0 20px 0;
-}
-
-.title {
-    width: 250px;
-    margin: 0px -60px;
+    margin: 0px 0 20px 20px;
 }
 
 img {
     border-radius: 20px;
 }
 
+.title {
+    /* width: 250px; */
+    margin: 0px -70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Btitr
+}
+
+.title span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .inputs {
-    width: 120px;
+    width: 150px;
     height: 30px;
-    margin: 0px 0px 0 -15px;
+    margin: 20px 0 0 0px;
 }
 
 .inputs input {
-    margin: 10px 0;
+    margin: 0px 0px 20px -30px;
     border-radius: 8px;
     border: 1px solid orange;
     outline: none;
     padding: 0 10px;
+    direction: rtl;
 }
 
 .labels {
+    /* margin: 0 0px; */
+    font-family: BKoodak;
+    padding: 0 80px;
+    width: 100%;
     background: rgba(66, 64, 64, 0);
-    direction: ltr;
+}
+
+.labels2 {
+    /* margin: 0 0px; */
+    font-family: BKoodak;
+    padding: 0 90px;
+    width: 100%;
+    background: rgba(66, 64, 64, 0);
+}
+
+.notification {
+    height: 0%;
 }
