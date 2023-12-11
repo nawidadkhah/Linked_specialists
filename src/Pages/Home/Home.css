@@ -21,6 +21,7 @@
     .nav-img img {
         height: 400%;
         width: 20%;
+        cursor: pointer;
     }
     
     .nav-img span {
@@ -95,7 +96,40 @@
     /* about page */
     
     .about-page {
-        background-color: #e66465;
+        /* background-color: #e66465; */
+        height: 550px;
+        /* padding: 180px 0 0 0; */
+        display: flex;
+        flex-direction: row;
+        /* background-image: url('../../Images/a.jpg'); */
+    }
+    
+    .about-page-title {
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 550px;
+        background: linear-gradient(to right, rgb(74, 74, 125), rgb(0, 5, 8));
+    }
+    
+    .about-page-title-titr {
+        color: aliceblue;
+        font-size: 60px;
+        padding: 100px 40px 0 0;
+        font-family: Btitr;
+    }
+    
+    .about-page-title-about {
+        color: aliceblue;
+        font-size: 20px;
+        padding: 0 40px 0 0;
+        font-family: Bkoodak;
+    }
+    
+    .about-page-image img {
+        width: 100%;
+        border-radius: 0;
     }
     /* data showing page */
     
@@ -104,7 +138,6 @@
         background-color: #ecd5e3;
         display: flex;
         padding: -40px 0 -40px 0;
-        /* flex-direction: row; */
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
@@ -170,17 +203,13 @@
         height: 350px;
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
-        /* background-color: #9198e5; */
-        background-color: #840f70;
+        background-color: #f5d7f0;
     }
     
     .footer-table {
-        /* height: 40px; */
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        /* background-color: #9198e5; */
     }
     
     .footer-info {
@@ -211,6 +240,10 @@
         font-family: BKoodak;
     }
     
+    .footer-about a:hover {
+        color: #9198e5;
+    }
+    
     .footer-about span {
         font-size: larger;
         font-weight: 500;
@@ -234,30 +267,12 @@
         height: 100px;
         direction: rtl;
         font-family: BKoodak;
-        /* inline-size: 100px; */
     }
     
     .footer-copy-right {
         direction: rtl;
         margin: 50px 0px 0 0;
         padding: 5px 20px;
-        background-color: #9198e5;
+        background-color: #f0bce7;
         height: 20px;
     }
-    /*     
-    .footer-table {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .footer-info {
-        margin: 200px 0;
-        padding: 0px 0 0 0;
-    }
-    
-    .footer-info .footer-info-item {
-        margin: -170px 0;
-        padding: 0px 0 0 0;
-    }
-    
-    .footer-info-item {} */

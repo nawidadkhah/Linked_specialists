@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 import Logo from '../../Images/logo.jpg'
 import { Card } from '../../Components/Card/Card'
 import { Circle } from '../../Components/Circle/Circle'
+import About from '../../Images/about.jpg'
 import sherkat2 from '../../Images/Related-ins/لوگو-مشتریان_بیمه-ما.jpg'
 import sherkat3 from '../../Images/Related-ins/لوگوی-مشتریان-پیش-فرض_موننکو-ایران.jpg'
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
@@ -39,6 +40,11 @@ export const Home = () => {
         </ul>
       </div>
       <div className="about-page">
+        <div className='about-page-title'>
+          <div className="about-page-title-titr">ساهمتا</div>
+          <div className="about-page-title-about">راهی برای آشنایی با متخصصان برتر در سرار دنیا با استفاده از بهترین متدهای انتخاب</div>
+        </div>
+        <div className='about-page-image'><img src={About} alt="image" /></div>
       </div>
       <div className="data-showing">
         <Circle title="تعداد کاربران" number="1200" />
@@ -102,8 +108,9 @@ export const Home = () => {
           </div>
         </div>
         <div className="footer-copy-right">
-          تمامی حقوق مادی و معنوی این وب‌سایت برای شرکت فراگستر محفوظ است.
+          &copy;   تمامی حقوق مادی و معنوی این وب‌سایت برای شرکت فراگستر محفوظ است.
         </div>
+      
       </div>
     </div>
   )
