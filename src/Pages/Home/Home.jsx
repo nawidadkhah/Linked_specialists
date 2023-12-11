@@ -85,7 +85,7 @@ export const Home = () => {
         <div className="footer-table">
           <div className="footer-info">
             <div className="footer-info-item">تماس با فراگستر</div>
-            <div className="footer-info-item">تهران، خیابان مطهری،خیابان کوه نور، خیابان سمنانی (هفتم) – پلاک </div>
+            <div className="footer-info-item">تهران، خیابان مطهری،خیابان کوه نور، خیابان سمنان، پلاک 7</div>
             <div className="footer-info-item">تلفن: 42623-021</div>
             <div className="footer-info-item">فکس: 88172998-021</div>
             <div className="footer-info-item">info@faragostar.net</div>
@@ -95,7 +95,7 @@ export const Home = () => {
             <span>درباره</span>
             <div className="footer-menu-infos">
               این سایت در هدف ایجاد یک راه راحت برای دسترسی به اطلاعات <br />افراد متخصص طراحی شده است تا با 
-              <br />استفاده از آن بتوانند از هر جای دنیا به بهترین افراد که در آن<br /> زمینه تخصص دارند، کار بدهند.
+              استفاده از آن   <br />بتوانند از هر جای دنیا به بهترین افراد که در آن<br /> زمینه تخصص دارند، کار بدهند.
             </div>
           </div>
           <div className="footer-about">

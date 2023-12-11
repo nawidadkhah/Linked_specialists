@@ -4,7 +4,8 @@
     .navbar {
         height: 80px;
         width: 100%;
-        background: linear-gradient(to right, #e66465, #9198e5);
+        /* background: linear-gradient(to right, #e66465, #9198e5); */
+        background: linear-gradient(to right, white, rgb(74, 74, 125), rgb(30, 103, 148));
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -35,12 +36,13 @@
     }
     
     .nav-items {
-        font-family: BKoodak;
+        font-family: Btitr;
         padding: 26px 30px;
         cursor: pointer;
         font-size: 14px;
         font-weight: 500;
-        text-shadow: 2px 2px 7px rgb(205, 88, 152);
+        text-shadow: 2px 2px 7px rgb(132, 93, 115);
+        /* text-shadow: 2px 2px 7px rgb(205, 88, 152); */
     }
     
     .nav-items:last-child {
@@ -48,7 +50,8 @@
     }
     
     .nav-items .items {
-        color: rgb(85, 27, 137);
+        /* color: rgb(85, 27, 137); */
+        color: rgb(224, 192, 253);
         position: relative;
         opacity: 1;
     }
@@ -83,11 +86,11 @@
     }
     
     .nav-items:nth-child(2):hover:before {
-        width: 105px;
+        width: 110px;
     }
     
     .nav-items:nth-child(4):hover:before {
-        width: 120px;
+        width: 125px;
     }
     
     .nav-items:nth-child(5):hover:before {
@@ -96,12 +99,9 @@
     /* about page */
     
     .about-page {
-        /* background-color: #e66465; */
         height: 550px;
-        /* padding: 180px 0 0 0; */
         display: flex;
         flex-direction: row;
-        /* background-image: url('../../Images/a.jpg'); */
     }
     
     .about-page-title {
@@ -252,8 +252,8 @@
     
     .footer-menu {
         direction: rtl;
-        display: flex;
-        flex-direction: column;
+        /* display: flex; */
+        /* flex-direction: column; */
     }
     
     .footer-menu span {
@@ -267,11 +267,15 @@
         height: 100px;
         direction: rtl;
         font-family: BKoodak;
+        /* padding: 10px 0 20px 0; */
+        margin: 30px 0;
     }
     
     .footer-copy-right {
         direction: rtl;
-        margin: 50px 0px 0 0;
+        margin: 16px 0 0 0;
+        display: flex;
+        justify-content: center;
         padding: 5px 20px;
         background-color: #f0bce7;
         height: 20px;
