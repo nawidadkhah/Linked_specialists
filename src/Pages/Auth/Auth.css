@@ -1,13 +1,3 @@
-@font-face {
-    font-family: Btitr;
-    src: url("../../Fonts/BTitrBd.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: BKoodak;
-    src: url("../../Fonts/BKoodkBd.ttf") format("truetype");
-}
-
 .background-image-login {
     background-image: url(../../Images/login_background.jpg);
     background-size: 1000px;
