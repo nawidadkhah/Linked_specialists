@@ -2,3 +2,13 @@
     margin: 0;
     height: 100%;
 }
+
+@font-face {
+    font-family: Btitr;
+    src: url("./Fonts/BTitrBd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: BKoodak;
+    src: url("./Fonts/BKoodkBd.ttf") format("truetype");
+}
