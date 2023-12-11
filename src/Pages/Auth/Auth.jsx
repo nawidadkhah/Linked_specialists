@@ -1,10 +1,10 @@
 import {React, useState} from 'react'
-import Logo from '../Images/logo.jpg'
+import Logo from '../../Images/logo.jpg'
 import { ToastContainer, toast } from 'react-toastify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import 'react-toastify/dist/ReactToastify.css';
-import  '../Components/Button/Button.jsx'
+import  '../../Components/Button/Button.jsx'
 import './Auth.css'
 
 export const Auth = () => {

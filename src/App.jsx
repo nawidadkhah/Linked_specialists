@@ -1,4 +1,4 @@
-import {Auth} from './Pages/Auth'
+import {Auth} from './Pages/Auth/Auth'
 import './App.css'
 
 function App() {
