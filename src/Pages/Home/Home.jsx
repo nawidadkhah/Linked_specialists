@@ -1,11 +1,26 @@
-import { React } from 'react'
+import { React, useState } from 'react'
 import Logo from '../../Images/logo.jpg'
 import { Card } from '../../Components/Card/Card'
 import sherkat2 from '../../Images/Related-ins/لوگو-مشتریان_بیمه-ما.jpg'
 import sherkat3 from '../../Images/Related-ins/لوگوی-مشتریان-پیش-فرض_موننکو-ایران.jpg'
+import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import './Home.css'
 
 export const Home = () => {
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleScroll = (direction) => {
+    const container = document.getElementById('scroll-container');
+    const scrollAmount = 300; // You can adjust the scroll amount
+
+    if (direction === 'left') {
+      container.scrollLeft -= scrollAmount;
+      setScrollLeft(container.scrollLeft);
+    } else if (direction === 'right') {
+      container.scrollLeft += scrollAmount;
+      setScrollLeft(container.scrollLeft);
+    }
+  };
 
   return (
     <div className='HomePage'>
@@ -27,12 +42,29 @@ export const Home = () => {
       <div className="data-showing">
       </div>
       <div className="related">
-        <Card name="taghi" logo={sherkat2} />
-        <Card name="naghi" logo={sherkat3} />
-        <Card name="taghi" logo={sherkat2} />
-        <Card name="naghi" logo={sherkat3} />
-        <Card name="taghi" logo={sherkat2} />
-        <Card name="naghi" logo={sherkat3} />
+        <div className="related-title">بیش از 2600 برند به ما اعتماد کرده‌اند</div>
+          <div className="cards-scroll">
+          <button className='scroll-btn' onClick={() => handleScroll('left')}><GoArrowLeft/></button>
+            <div className="related-cards" id="scroll-container" >
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+              <Card name="taghi" logo={sherkat2} />
+              <Card name="naghi" logo={sherkat3} />
+           </div>
+          <button className='scroll-btn' onClick={() => handleScroll('right')}><GoArrowRight/></button>
+        </div>
       </div>
     </div>
   )

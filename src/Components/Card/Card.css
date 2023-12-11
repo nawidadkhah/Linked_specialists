@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .3s ease-out;
+    cursor: pointer;
 }
 
 .card-logo {
@@ -21,4 +23,12 @@
 .card-logo img {
     height: 100px;
     width: 100px;
+}
+
+.card-com:hover {
+    width: 160px;
+    height: 140px;
+    margin: 2px 0 0 0;
+    padding: 20px 0 0 0;
+    background-color: rgb(222, 223, 223);
 }
