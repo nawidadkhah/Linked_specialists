@@ -100,13 +100,14 @@
     /* data showing page */
     
     .data-showing {
-        height: 300px;
+        height: 60%;
         background-color: #ecd5e3;
         display: flex;
-        flex-direction: row;
+        padding: -40px 0 -40px 0;
+        /* flex-direction: row; */
         justify-content: space-around;
         align-items: center;
-        /* padding: 100px; */
+        flex-wrap: wrap;
     }
     /* show companies that use our website */
     
@@ -164,3 +165,99 @@
         align-items: center;
     }
     /* footer */
+    
+    .footer {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* background-color: #9198e5; */
+        background-color: #840f70;
+    }
+    
+    .footer-table {
+        /* height: 40px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* background-color: #9198e5; */
+    }
+    
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-info-item {
+        direction: rtl;
+        font-family: BKoodak;
+    }
+    
+    .footer-info-item:first-child {
+        font-size: larger;
+        font-weight: 500;
+        font-family: Btitr;
+    }
+    
+    .footer-info-item:hover {
+        color: #e66465;
+        cursor: pointer;
+    }
+    
+    .footer-about {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        font-family: BKoodak;
+    }
+    
+    .footer-about span {
+        font-size: larger;
+        font-weight: 500;
+        font-family: Btitr;
+    }
+    
+    .footer-menu {
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-menu span {
+        font-size: larger;
+        font-weight: 500;
+        font-family: Btitr;
+    }
+    
+    .footer-menu-infos {
+        width: 100;
+        height: 100px;
+        direction: rtl;
+        font-family: BKoodak;
+        /* inline-size: 100px; */
+    }
+    
+    .footer-copy-right {
+        direction: rtl;
+        margin: 50px 0px 0 0;
+        padding: 5px 20px;
+        background-color: #9198e5;
+        height: 20px;
+    }
+    /*     
+    .footer-table {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .footer-info {
+        margin: 200px 0;
+        padding: 0px 0 0 0;
+    }
+    
+    .footer-info .footer-info-item {
+        margin: -170px 0;
+        padding: 0px 0 0 0;
+    }
+    
+    .footer-info-item {} */
