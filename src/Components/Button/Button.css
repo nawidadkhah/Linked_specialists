@@ -11,8 +11,8 @@
     margin: 40px 20px;
     cursor: pointer;
     transition: .2s ease-in-out;
-    border: 1px solid #917db1;
-    font-family: BKoodak;
+    border: 1px solid rgb(219, 91, 45);
+    font-family: IranSans;
 }
 
 .submit {
@@ -25,6 +25,6 @@
 .button:hover {
     width: 90px;
     height: 30px;
-    background-color: #917db1;
+    background-color: rgb(218, 80, 29);
     border-radius: 20px;
 }

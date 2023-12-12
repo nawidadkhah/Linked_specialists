@@ -12,3 +12,8 @@
     font-family: BKoodak;
     src: url("./Fonts/BKoodkBd.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: IranSans;
+    src: url("./Fonts/FontsFree-Net-ir_sans.ttf") format("truetype");
+}
