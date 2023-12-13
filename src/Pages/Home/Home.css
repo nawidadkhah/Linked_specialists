@@ -38,8 +38,9 @@
     /* data showing page */
     
     .data-showing {
-        height: 200px;
-        background-color: #ecd5e3;
+        z-index: 1000;
+        height: 100%;
+        background-color: #e7e3d4;
         display: flex;
         justify-content: center;
         align-items: center;

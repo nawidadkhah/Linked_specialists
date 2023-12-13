@@ -7,7 +7,7 @@ export const Count = (props) => {
       const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <div>
+    <div className="district">
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}

@@ -3,10 +3,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: .5s ease-out;
+        padding: 50px 0px;
     }
     
     .data-showing span {
-        padding: 10px 20px;
+        padding: 5px 40px;
         font-size: large;
         font-weight: 600;
+        cursor: pointer;
+    }
+    
+    .data-showing-items:hover {
+        color: rgb(62, 185, 244);
     }
