@@ -1,0 +1,85 @@
+ .navbar {
+     height: 110px;
+     background-color: rgb(180, 30, 60);
+     display: flex;
+     flex-direction: row;
+     position: sticky;
+     top: 0;
+     z-index: 5;
+ }
+ 
+ .nav-img {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-left: 40px;
+ }
+ 
+ .nav-img img {
+     height: 70px;
+     width: 60px;
+     cursor: pointer;
+ }
+ 
+ .nav-img span {
+     font-size: 14px;
+     color: #ffffff;
+ }
+ 
+ .nav-tools {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .nav-items {
+     padding: 0px 30px;
+     cursor: pointer;
+     font-size: 14px;
+ }
+ 
+ .nav-items .items {
+     color: #ffffff;
+     position: relative;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ .nav-items .items:hover {
+     opacity: 1;
+ }
+ 
+ .nav-items::before {
+     height: 2px;
+     content: "";
+     position: absolute;
+     background-color: #ffffff;
+     border-radius: 20px;
+ }
+ 
+ .nav-items::before {
+     width: 0%;
+     top: 70px;
+ }
+ 
+ .nav-items:nth-child(1):hover:before {
+     width: 120px;
+ }
+ 
+ .nav-items:nth-child(2):hover:before {
+     width: 140px;
+ }
+ 
+ .nav-items:nth-child(3):hover:before {
+     width: 140px;
+ }
+ 
+ .nav-items:nth-child(4):hover:before {
+     width: 155px;
+ }
+ 
+ .nav-items:nth-child(5):hover:before {
+     width: 50px;
+ }

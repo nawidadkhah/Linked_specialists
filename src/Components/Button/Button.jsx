@@ -4,7 +4,7 @@ export const Button = () => {
   return (
     <div className='button'>
           <div className='submit'> 
-             ثبت
+             ورود
           </div>
     </div>
   )

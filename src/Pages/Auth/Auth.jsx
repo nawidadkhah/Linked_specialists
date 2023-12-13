@@ -49,9 +49,6 @@ const notify = (msg, type) => {
 }
     return (
         <div className="background-login">
-            <div className="backgroung-login-left"></div>
-
-            <div className='background-login-right'>
                 <div className="auth-side">
                     <div className="cards">
                         <div className="logo">
@@ -68,7 +65,7 @@ const notify = (msg, type) => {
                         <div className="inputs">
                             <form >
                                 <div className='labels'>
-                                <label htmlFor="username">: نام کاربری</label>
+                                <label htmlFor="username">نام کاربری :</label>
                                 </div> 
                                     <input
                                         type="text"
@@ -77,7 +74,7 @@ const notify = (msg, type) => {
                                         placeholder="نام کاربری"
                                     />
                                 <div className='labels labels2'>
-                                    <label htmlFor="password">: رمز عبور</label>
+                                    <label htmlFor="password">رمز عبور :</label>
                                 </div> 
                                     <div className="password-input-container">
                                     <input
@@ -96,14 +93,13 @@ const notify = (msg, type) => {
                                         type="submit"
                                         onClick={handleSubmit}
                                     >
-                                        ثبت
+                                    ورود
                                     </button>
                                     <ToastContainer limit={5} rtl className={"notification"} />
                             </form>
                         </div>
                     </div>
                 </div>
-             </div>    
         </div>
     )
 }
