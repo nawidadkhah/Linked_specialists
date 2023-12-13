@@ -56,7 +56,7 @@ export const Home = () => {
         <Count title="شرکت‌ها" number="136000" />
         <Count title="قاره‌ها" number="5" />
       </div>
-      <div className="related">
+      {/* <div className="related">
         <div className="related-title">
           بیش از 2600 برند به ما اعتماد کرده‌اند
         </div>
@@ -86,7 +86,7 @@ export const Home = () => {
             <GoArrowRight />
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="footer">
         <div className="footer-table">
           <div className="footer-info">
