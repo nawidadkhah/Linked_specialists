@@ -1,0 +1,12 @@
+    .data-showing-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .data-showing span {
+        padding: 10px 20px;
+        font-size: large;
+        font-weight: 600;
+    }
