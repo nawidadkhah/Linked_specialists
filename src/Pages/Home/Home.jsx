@@ -8,6 +8,11 @@ import sherkat3 from "../../Images/Related-ins/لوگوی-مشتریان-پیش-
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import { RiContactsFill } from "react-icons/ri";
+import { IoMdMenu } from "react-icons/io";
+import { IoInformationCircle } from "react-icons/io5";
+
+
 import "./Home.css";
 
 export const Home = () => {
@@ -20,10 +25,9 @@ export const Home = () => {
     return n.toString().replace(/\d/g, (x) => farsiDigits[x]);
   }
 
-
   const handleScroll = (direction) => {
     const container = document.getElementById("scroll-container");
-    const scrollAmount = 300; // You can adjust the scroll amount
+    const scrollAmount = 200; // You can adjust the scroll amount
 
     if (direction === "left") {
       container.scrollLeft -= scrollAmount;
@@ -37,26 +41,26 @@ export const Home = () => {
   return (
     <div className="HomePage">
       <Navbar />
-      {/* <div className="about-page">
-        <div className="about-page-title">
+      <div className="about-page">
+        {/* <div className="about-page-title">
           <div className="about-page-title-titr">ساهمتا</div>
           <div className="about-page-title-about">
             راهی برای آشنایی با متخصصان برتر در سرار دنیا با استفاده از بهترین
-            متدهای انتخاب
+            // متدهای انتخاب
           </div>
         </div>
         <div className="about-page-image">
           <img src={About} alt="image" />
-        </div>
-      </div> */}
+        </div> */}
+      </div>
       <div className="data-showing">
-        <Count title="مشتریان" number="823000" />
+        <Count className="a" title="مشتریان" number="823000" />
         <Count title="متخصصان" number="45923" />
         <Count title="مقالات" number="29300000" />
         <Count title="شرکت‌ها" number="136000" />
         <Count title="قاره‌ها" number="5" />
       </div>
-      {/* <div className="related">
+      <div className="related">
         <div className="related-title">
           بیش از 2600 برند به ما اعتماد کرده‌اند
         </div>
@@ -86,30 +90,45 @@ export const Home = () => {
             <GoArrowRight />
           </button>
         </div>
-      </div> */}
+      </div>
       <div className="footer">
         <div className="footer-table">
           <div className="footer-info">
-            <div className="footer-info-item">تماس با فراگستر</div>
+            <div className="footer-info-item-title">
+              <span className="footer-info-title-logo">
+                <RiContactsFill />
+              </span>
+              <span className="footer-info-title-titr">تماس با فراگستر</span>
+            </div>
             <div className="footer-info-item">
               تهران، خیابان مطهری،خیابان کوه نور، خیابان سمنان، پلاک 7
             </div>
             <div className="footer-info-item">تلفن: 42623-021</div>
             <div className="footer-info-item">فکس: 88172998-021</div>
-            <div className="footer-info-item">info@faragostar.net</div>
+            <div className="footer-info-item">info@faragostar.net :ایمیل</div>
             <div className="footer-info-item">کدپستی: 1587695611</div>
           </div>
           <div className="footer-menu">
-            <span>درباره</span>
+            <div className="footer-menu-title">
+              <span className="footer-menu-title-logo">
+                <IoInformationCircle />
+              </span>
+              <span className="footer-menu-title-titr">درباره</span>
+            </div>
             <div className="footer-menu-infos">
-              این سایت در هدف ایجاد یک راه راحت برای دسترسی به اطلاعات <br />
-              افراد متخصص طراحی شده است تا با استفاده از آن <br />
+              این سایت در هدف ایجاد یک راه راحت برای دسترسی به اطلاعات 
+              افراد متخصص طراحی شده است تا با استفاده از آن 
               بتوانند از هر جای دنیا به بهترین افراد که در آن
-              <br /> زمینه تخصص دارند، کار بدهند.
+               زمینه تخصص دارند، کار بدهند.
             </div>
           </div>
           <div className="footer-about">
-            <span>منو</span>
+            <div className="footer-about-title">
+              <span className="footer-about-title-logo">
+                <IoMdMenu />
+              </span>
+              <span className="footer-about-title-titr">منو</span>
+            </div>
             <a href="#">جستجوی متخصص</a>
             <a href="#">کلید واژه‌های تخصصی</a>
             <a href="#">روند علمی متخصصین</a>
