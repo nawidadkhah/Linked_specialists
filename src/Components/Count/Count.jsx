@@ -10,7 +10,7 @@ export const Count = (props) => {
     <div className="district">
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}
-        onExit={() => setCounterOn(false)}
+        // onExit={() => setCounterOn(false)}
       >
         {counterOn && (
           <div className="data-showing-items">
