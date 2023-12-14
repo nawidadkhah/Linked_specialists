@@ -3,9 +3,10 @@
     /* about page */
     
     .about-page {
-        height: 550px;
+        height: 250px;
         display: flex;
         flex-direction: row;
+        background-color: #c4dbf6;
     }
     
     .about-page-title {
@@ -145,7 +146,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        background-color: #e7e3d4;
+        /* background-color: #e7e3d4; */
     }
     
     .footer-table {
@@ -265,5 +266,5 @@
         margin: 16px 0 0 0;
         display: flex;
         justify-content: center;
-        background-color: #d8d5c9;
+        background-color: #f8f4e4;
     }
