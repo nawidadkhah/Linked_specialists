@@ -13,7 +13,6 @@ import { IoMdMenu } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
 import sherkat21 from "../../Gifs/solution-engineering-3.gif";
 
-
 import "./Home.css";
 
 export const Home = () => {
@@ -47,7 +46,8 @@ export const Home = () => {
           <div className="about-page-title-titr">ساهمتا</div>
           <div className="about-page-title-about">
             راهی برای آشنایی با متخصصان برتر در سرار دنیا با استفاده از بهترین
-متدهای حال حاضر</div>
+            متدهای حال حاضر
+          </div>
         </div>
       </div>
       <div className="data-showing">
