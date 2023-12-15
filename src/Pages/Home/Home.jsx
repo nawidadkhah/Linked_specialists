@@ -11,6 +11,7 @@ import ScrollTrigger from "react-scroll-trigger";
 import { RiContactsFill } from "react-icons/ri";
 import { IoMdMenu } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
+import sherkat21 from "../../Gifs/solution-engineering-3.gif";
 
 
 import "./Home.css";
@@ -42,16 +43,12 @@ export const Home = () => {
     <div className="HomePage">
       <Navbar />
       <div className="about-page">
-        {/* <div className="about-page-title">
+        <div className="about-page-title">
           <div className="about-page-title-titr">ساهمتا</div>
           <div className="about-page-title-about">
             راهی برای آشنایی با متخصصان برتر در سرار دنیا با استفاده از بهترین
-            // متدهای انتخاب
-          </div>
+متدهای حال حاضر</div>
         </div>
-        <div className="about-page-image">
-          <img src={About} alt="image" />
-        </div> */}
       </div>
       <div className="data-showing">
         <Count className="a" title="مشتریان" number="823000" />
@@ -116,10 +113,9 @@ export const Home = () => {
               <span className="footer-menu-title-titr">درباره</span>
             </div>
             <div className="footer-menu-infos">
-              این سایت در هدف ایجاد یک راه راحت برای دسترسی به اطلاعات 
-              افراد متخصص طراحی شده است تا با استفاده از آن 
-              بتوانند از هر جای دنیا به بهترین افراد که در آن
-               زمینه تخصص دارند، کار بدهند.
+              این سایت در هدف ایجاد یک راه راحت برای دسترسی به اطلاعات افراد
+              متخصص طراحی شده است تا با استفاده از آن بتوانند از هر جای دنیا به
+              بهترین افراد که در آن زمینه تخصص دارند، کار بدهند.
             </div>
           </div>
           <div className="footer-about">

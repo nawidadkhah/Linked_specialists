@@ -1,270 +1,280 @@
-    .HomePage {}
-    /* navbar */
-    /* about page */
-    
-    .about-page {
-        height: 250px;
-        display: flex;
-        flex-direction: row;
-        background-color: #c4dbf6;
+.HomePage {}
+
+
+/* navbar */
+
+
+/* about page */
+
+.about-page {
+    height: 500px;
+    background-image: url('../../Gifs/ods-global-network.gif');
+    background-size: cover;
+    background-position: 0px 60px;
+    background-attachment: fixed;
+}
+
+.about-page-title {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-page-title-titr {
+    color: aliceblue;
+    font-size: 60px;
+    padding: 0 20px 0;
+    text-shadow: 8px 6px 8px rgb(128, 34, 34);
+}
+
+.about-page-title-about {
+    color: aliceblue;
+    font-size: 20px;
+    height: 90px;
+    width: 500px;
+    text-shadow: 8px 6px 8px rgb(128, 34, 34);
+    padding: 0 20px 0;
+}
+
+
+/* data showing page */
+
+.data-showing {
+    z-index: 1000;
+    height: 100%;
+    /* background-color: #e7e3d4; */
+    /* background-color: #c4dbf6 */
+    background-color: rgb(180, 30, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* show companies that use our website */
+
+.related {
+    width: 100%;
+    height: 300px;
+    background-color: #c4dbf6;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 80px 0;
+}
+
+.related-title {
+    font-weight: 1000;
+    font-style: oblique;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.related-cards {
+    display: flex;
+    overflow-x: hidden;
+    margin: 30px 50px;
+    padding: 30px 0;
+}
+
+.scroll-btn {
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    animation: example 2s infinite;
+}
+
+.scroll-btn:first-child {
+    margin: 0px 0 16px 50px;
+    animation: example 2s infinite;
+}
+
+@keyframes example {
+    0% {
+        margin-top: 0px;
     }
-    
-    .about-page-title {
-        direction: rtl;
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        height: 550px;
-        background: linear-gradient(to right, #d57588, #c4dbf6);
+    10% {
+        margin-top: 2px;
     }
-    
-    .about-page-title-titr {
-        color: aliceblue;
-        font-size: 60px;
-        padding: 100px 40px 0 0;
-        font-family: Btitr;
+    20% {
+        margin-top: 4px;
     }
-    
-    .about-page-title-about {
-        color: aliceblue;
-        font-size: 20px;
-        padding: 0 40px 0 0;
-        font-family: Bkoodak;
+    30% {
+        margin-top: 6px;
     }
-    
-    .about-page-image img {
-        width: 100%;
-        border-radius: 0;
+    40% {
+        margin-top: 8px;
     }
-    /* data showing page */
-    
-    .data-showing {
-        z-index: 1000;
-        height: 100%;
-        /* background-color: #e7e3d4; */
-        /* background-color: #c4dbf6 */
-        background-color: rgb(180, 30, 60);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+    50% {
+        margin-top: 10px;
     }
-    /* show companies that use our website */
-    
-    .related {
-        width: 100%;
-        height: 300px;
-        /* background-color: rgb(180, 30, 60); */
-        background-color: #c4dbf6;
-        display: flex;
-        flex-direction: column;
-        padding: 0 0 80px 0;
+    60% {
+        margin-top: 8px;
     }
-    
-    .related-title {
-        font-weight: 1000;
-        font-style: oblique;
-        font-size: 22px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
+    70% {
+        margin-top: 6px;
     }
-    
-    .related-cards {
-        display: flex;
-        overflow-x: hidden;
-        margin: 30px 50px;
-        padding: 30px 0;
+    80% {
+        margin-top: 4px;
     }
-    
-    .scroll-btn {
-        width: 30px;
-        height: 30px;
-        background-color: inherit;
-        border: none;
-        font-size: 40px;
-        cursor: pointer;
-        animation: example 2s infinite;
+    90% {
+        margin-top: 2px;
     }
-    
-    .scroll-btn:first-child {
-        margin: 0px 0 16px 50px;
-        animation: example 2s infinite;
+    100% {
+        margin-top: 0px;
     }
-    
-    @keyframes example {
-        0% {
-            margin-top: 0px;
-        }
-        10% {
-            margin-top: 2px;
-        }
-        20% {
-            margin-top: 4px;
-        }
-        30% {
-            margin-top: 6px;
-        }
-        40% {
-            margin-top: 8px;
-        }
-        50% {
-            margin-top: 10px;
-        }
-        60% {
-            margin-top: 8px;
-        }
-        70% {
-            margin-top: 6px;
-        }
-        80% {
-            margin-top: 4px;
-        }
-        90% {
-            margin-top: 2px;
-        }
-        100% {
-            margin-top: 0px;
-        }
-    }
-    
-    .scroll-btn:last-child {
-        margin: 0px 70px 16px 0;
-    }
-    
-    .cards-scroll {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    /* footer */
-    
-    .footer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        /* background-color: #e7e3d4; */
-    }
-    
-    .footer-table {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .footer-info {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-    }
-    
-    .footer-info-item-title {
-        direction: rtl;
-        margin: 10px 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border-bottom: 2px solid rgb(180, 30, 60);
-        width: 200px;
-        cursor: pointer;
-    }
-    
-    .footer-info-title-logo {
-        padding: 0 0 0 10px;
-        font-size: 20px;
-    }
-    
-    .footer-info-item {
-        padding: 10px 0 0 0;
-    }
-    
-    .footer-info-item:hover {
-        color: #e66465;
-        cursor: pointer;
-    }
-    
-    .footer-info-item-title:hover {
-        color: #e66465;
-        cursor: pointer;
-    }
-    /*  */
-    
-    .footer-about {
-        display: flex;
-        flex-direction: column;
-        direction: rtl;
-        color: #000000;
-    }
-    
-    .footer-about-title {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        border-bottom: 2px solid rgb(180, 30, 60);
-        width: 80px;
-        cursor: pointer;
-    }
-    
-    .footer-about-title-titr {
-        margin: 10px 0;
-        cursor: pointer;
-    }
-    
-    .footer-about-title-logo {
-        padding: 0 0 0 10px;
-        font-size: 20px;
-    }
-    
-    .footer-about a {
-        padding: 10px 0 0 0;
-        color: #000000;
-    }
-    
-    .footer-about a:hover {
-        color: #e66465;
-    }
-    
-    .footer-about-title:hover {
-        color: #e66465;
-    }
-    /*  */
-    
-    .footer-menu {
-        direction: rtl;
-    }
-    
-    .footer-menu-title {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        border-bottom: 2px solid rgb(180, 30, 60);
-        width: 80px;
-        cursor: pointer;
-    }
-    
-    .footer-menu-title-logo {
-        padding: 0 0 0 10px;
-        font-size: 20px;
-    }
-    
-    .footer-menu-title-titr {
-        margin: 10px 0;
-        cursor: pointer;
-    }
-    
-    .footer-menu-infos {
-        width: 400px;
-        margin: 20px 0;
-    }
-    /*  */
-    
-    .footer-copy-right {
-        direction: rtl;
-        margin: 16px 0 0 0;
-        display: flex;
-        justify-content: center;
-        background-color: #f8f4e4;
-    }
+}
+
+.scroll-btn:last-child {
+    margin: 0px 70px 16px 0;
+}
+
+.cards-scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #e7e3d4;
+}
+
+.footer-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.footer-info-item-title {
+    direction: rtl;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid rgb(180, 30, 60);
+    width: 200px;
+    cursor: pointer;
+}
+
+.footer-info-title-logo {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+}
+
+.footer-info-item {
+    padding: 10px 0 0 0;
+}
+
+.footer-info-item:hover {
+    color: #e66465;
+    cursor: pointer;
+}
+
+.footer-info-item-title:hover {
+    color: #e66465;
+    cursor: pointer;
+}
+
+
+/*  */
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    color: #000000;
+}
+
+.footer-about-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    border-bottom: 2px solid rgb(180, 30, 60);
+    width: 80px;
+    cursor: pointer;
+}
+
+.footer-about-title-titr {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.footer-about-title-logo {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+}
+
+.footer-about a {
+    padding: 10px 0 0 0;
+    color: #000000;
+}
+
+.footer-about a:hover {
+    color: #e66465;
+}
+
+.footer-about-title:hover {
+    color: #e66465;
+}
+
+
+/*  */
+
+.footer-menu {
+    direction: rtl;
+}
+
+.footer-menu-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    border-bottom: 2px solid rgb(180, 30, 60);
+    width: 80px;
+    cursor: pointer;
+}
+
+.footer-menu-title-logo {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+}
+
+.footer-menu-title-titr {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.footer-menu-infos {
+    width: 400px;
+    margin: 20px 0;
+}
+
+
+/*  */
+
+.footer-copy-right {
+    direction: rtl;
+    margin: 16px 0 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f4e4;
+}
