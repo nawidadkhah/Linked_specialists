@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    /* height: 100%; */
-    font-family: IranSans;
+    font-family: Shabnam;
 }
 
 @font-face {
@@ -17,4 +16,9 @@
 @font-face {
     font-family: IranSans;
     src: url("./Fonts/FontsFree-Net-ir_sans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url("./Fonts/Shabnam.ttf") format("truetype");
 }

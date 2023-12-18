@@ -3,9 +3,6 @@
 }
 
 
-/* navbar */
-
-
 /* about page */
 
 .about-page {
@@ -25,7 +22,7 @@
 .about-page-title-titr {
     color: aliceblue;
     font-size: 60px;
-    padding: 0 20px 0;
+    padding: 10px 20px 0;
     text-shadow: 8px 6px 8px rgb(128, 34, 34);
 }
 
@@ -42,10 +39,8 @@
 /* data showing page */
 
 .data-showing {
-    z-index: 1000;
-    height: 100%;
-    /* background-color: #e7e3d4; */
-    /* background-color: #c4dbf6 */
+    /* z-index: 1000; */
+    /* height: 100%; */
     background-color: rgb(180, 30, 60);
     display: flex;
     justify-content: center;
@@ -66,9 +61,9 @@
 }
 
 .related-title {
-    font-weight: 1000;
-    font-style: oblique;
-    font-size: 22px;
+    font-weight: 600;
+    /* font-style: oblique; */
+    font-size: 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -153,7 +148,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #e7e3d4;
+    /* background-color: #e7e3d4; */
+    background-color: rgb(246, 246, 246);
 }
 
 .footer-table {
@@ -279,5 +275,6 @@
     margin: 16px 0 0 0;
     display: flex;
     justify-content: center;
-    background-color: #f8f4e4;
+    /* background-color: #f8f4e4; */
+    background-color: rgb(228, 228, 228);
 }

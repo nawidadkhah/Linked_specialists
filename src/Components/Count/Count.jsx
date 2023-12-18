@@ -14,6 +14,7 @@ export const Count = (props) => {
       >
         {counterOn && (
           <div className="data-showing-items">
+            <span className="data-showing-items-logo">{props.logo}</span>
             <span>{props.title}</span>
             <span>
               <CountUp start={0} end={props.number} duration={3} delay={0} />

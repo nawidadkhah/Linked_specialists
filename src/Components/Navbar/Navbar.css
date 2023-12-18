@@ -6,6 +6,7 @@
      position: sticky;
      top: 0;
      z-index: 5;
+     box-shadow: 10px 4px 12px black;
  }
  
  .nav-img {
@@ -13,7 +14,7 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     margin-left: 40px;
+     margin-left: 10px;
  }
  
  .nav-img img {
@@ -23,8 +24,14 @@
  }
  
  .nav-img span {
-     font-size: 14px;
+     width: 250px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 16px;
      color: #ffffff;
+     align-items: center;
  }
  
  .nav-tools {
@@ -32,26 +39,25 @@
      align-items: center;
  }
  
- .nav-items {
+ .items {
+     font-weight: 600;
      padding: 0px 30px;
+     color: white;
      cursor: pointer;
-     font-size: 14px;
+     font-size: 18px;
  }
  
- .nav-items .items {
+ .items {
      color: #ffffff;
      position: relative;
+     font-size: 16px;
  }
  
  a {
      text-decoration: none;
  }
  
- .nav-items .items:hover {
-     opacity: 1;
- }
- 
- .nav-items::before {
+ .items::before {
      height: 2px;
      content: "";
      position: absolute;
@@ -59,27 +65,27 @@
      border-radius: 20px;
  }
  
- .nav-items::before {
+ .items::before {
      width: 0%;
-     top: 70px;
+     top: 30px;
  }
  
- .nav-items:nth-child(1):hover:before {
-     width: 120px;
+ .items:nth-child(5):hover:before {
+     width: 130px;
  }
  
- .nav-items:nth-child(2):hover:before {
-     width: 140px;
+ .items:nth-child(4):hover:before {
+     width: 150px;
  }
  
- .nav-items:nth-child(3):hover:before {
-     width: 140px;
+ .items:nth-child(3):hover:before {
+     width: 170px;
  }
  
- .nav-items:nth-child(4):hover:before {
-     width: 155px;
+ .items:nth-child(2):hover:before {
+     width: 150px;
  }
  
- .nav-items:nth-child(5):hover:before {
-     width: 50px;
+ .items:nth-child(1):hover:before {
+     width: 55px;
  }

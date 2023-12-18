@@ -12,6 +12,11 @@ import { RiContactsFill } from "react-icons/ri";
 import { IoMdMenu } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
 import sherkat21 from "../../Gifs/solution-engineering-3.gif";
+import { FaLinkedinIn } from "react-icons/fa";
+import { GrDocumentPerformance } from "react-icons/gr";
+import { VscSymbolKeyword } from "react-icons/vsc";
+import { SlPeople } from "react-icons/sl";
+import { MdEngineering } from "react-icons/md";
 
 import "./Home.css";
 
@@ -45,22 +50,32 @@ export const Home = () => {
         <div className="about-page-title">
           <div className="about-page-title-titr">ساهمتا</div>
           <div className="about-page-title-about">
-            راهی برای آشنایی با متخصصان برتر در سرار دنیا با استفاده از بهترین
-            متدهای حال حاضر
+            کشف متخصصان برتر ایرانی در سراسر دنیا با استفاده از بهترین متدهای
+            حال حاضر
           </div>
         </div>
       </div>
       <div className="data-showing">
-        <Count className="a" title="مشتریان" number="823000" />
-        <Count title="متخصصان" number="45923" />
-        <Count title="مقالات" number="29300000" />
-        <Count title="شرکت‌ها" number="136000" />
-        <Count title="قاره‌ها" number="5" />
+        <Count className="a" title="مشتریان" number="50" logo={<SlPeople />} />
+        <Count title="متخصصین ایرانی" number="45923" logo={<MdEngineering />}/>
+        <Count
+          title="کلیدواژه‌های تخصصی"
+          number="136000"
+          logo={<VscSymbolKeyword />}
+        />
+        <Count
+          title="مقالات"
+          number="29300000"
+          logo={<GrDocumentPerformance />}
+        />
+        <Count
+          title="کاربران لینکدین"
+          number="5500000"
+          logo={<FaLinkedinIn />}
+        />
       </div>
       <div className="related">
-        <div className="related-title">
-          بیش از 2600 برند به ما اعتماد کرده‌اند
-        </div>
+        <div className="related-title">باشگاه مشتریان</div>
         <div className="cards-scroll">
           <button className="scroll-btn" onClick={() => handleScroll("left")}>
             <GoArrowLeft />

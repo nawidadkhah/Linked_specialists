@@ -10,31 +10,23 @@ export const Navbar = () => {
         <span>سامانه هوشمند متخصص یاب ایرانی</span>
       </div>
       <ul className="nav-tools">
-        <i className="nav-items">
-          <a href="#" className="items">
-            جستجوی متخصص
-          </a>
-        </i>
-        <i className="nav-items">
-          <a href="#" className="items">
-            کلید واژه‌های تخصصی
-          </a>
-        </i>
-        <i className="nav-items">
-          <a href="#" className="items">
-            روند علمی متخصصین
-          </a>
-        </i>
-        <i className="nav-items">
-          <a href="#" className="items">
-            تنظیمات مدیریت کاربران
-          </a>
-        </i>
-        <i className="nav-items">
+        
           <a href="#" className="items">
             گزارشات
           </a>
-        </i>
+          <a href="#" className="items">
+            کلید واژه‌های تخصصی
+          </a>
+
+          <a href="#" className="items">
+            تنظیمات مدیریت کاربران
+          </a>
+          <a href="#" className="items">
+            روند علمی متخصصین
+          </a>
+          <a href="#" className="items">
+            جستجوی متخصص
+          </a>
       </ul>
     </div>
   );

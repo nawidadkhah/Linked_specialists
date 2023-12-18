@@ -18,7 +18,7 @@ const togglePasswordVisibility = () => {
 const handleSubmit= (e)=>{
     e.preventDefault()
     notify("کاربر با موفقیت وارد شد.", "success")
-    notify("رمزعبور یا نام کاربری اشتباه است.", "error")
+    // notify("رمزعبور یا نام کاربری اشتباه است.", "error")
 }
 
 const notify = (msg, type) => {
