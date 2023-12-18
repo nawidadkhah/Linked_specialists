@@ -3,15 +3,14 @@ import { Card } from "../../Components/Card/Card";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import About from "../../Images/about.jpg";
 import { Count } from "../../Components/Count/Count";
-import sherkat2 from "../../Images/Related-ins/لوگو-مشتریان_بیمه-ما.jpg";
-import sherkat3 from "../../Images/Related-ins/لوگوی-مشتریان-پیش-فرض_موننکو-ایران.jpg";
+import sherkat1 from "../../Images/Related-ins/Untitled-fotor-bg-remover-20231218164543.png";
+import sherkat2 from "../../Images/Related-ins/logo.png";
+import sherkat3 from "../../Images/Related-ins/mfa-logo2.webp";
+import sherkat4 from "../../Images/Related-ins/بنیاد_ملی_نخبگان.png";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
 import { RiContactsFill } from "react-icons/ri";
 import { IoMdMenu } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
-import sherkat21 from "../../Gifs/solution-engineering-3.gif";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrDocumentPerformance } from "react-icons/gr";
 import { VscSymbolKeyword } from "react-icons/vsc";
@@ -81,7 +80,11 @@ export const Home = () => {
             <GoArrowLeft />
           </button>
           <div className="related-cards" id="scroll-container">
-            <Card name="taghi" logo={sherkat2} />
+            <Card name="taghi" logo={sherkat1} />
+            <Card name="naghi" logo={sherkat2} />
+            <Card name="taghi" logo={sherkat3} />
+            <Card name="naghi" logo={sherkat4} />
+            {/* <Card name="taghi" logo={sherkat2} />
             <Card name="naghi" logo={sherkat3} />
             <Card name="taghi" logo={sherkat2} />
             <Card name="naghi" logo={sherkat3} />
@@ -92,11 +95,7 @@ export const Home = () => {
             <Card name="taghi" logo={sherkat2} />
             <Card name="naghi" logo={sherkat3} />
             <Card name="taghi" logo={sherkat2} />
-            <Card name="naghi" logo={sherkat3} />
-            <Card name="taghi" logo={sherkat2} />
-            <Card name="naghi" logo={sherkat3} />
-            <Card name="taghi" logo={sherkat2} />
-            <Card name="naghi" logo={sherkat3} />
+            <Card name="naghi" logo={sherkat3} /> */}
           </div>
           <button className="scroll-btn" onClick={() => handleScroll("right")}>
             <GoArrowRight />
