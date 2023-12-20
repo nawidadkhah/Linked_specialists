@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import gender from "../../Images/GENDER.jpg";
 import CountUp from "react-countup";
+import worldWide from '../../Images/world.jpg'
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./Reports.css";
@@ -38,7 +39,7 @@ export const Reports = () => {
       SetisType({
         age: false,
         gender: false,
-        crowd: false,
+        crowd: true,
       });
     }
   };
@@ -148,7 +149,11 @@ export const Reports = () => {
             </div>
           </div>
         )}
-        {isType.crowd && <div>fdfdfdf</div>}
+        {isType.crowd && (
+          <div className="reports-crowd">
+            <img src={worldWide} alt="world wide" />
+          </div>
+        )}
       </div>
     </div>
   );

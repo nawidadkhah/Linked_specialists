@@ -25,6 +25,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 15px 10px 30px;
+    cursor: pointer;
 }
 
 .reports-page-button {
@@ -102,4 +103,18 @@
     font-weight: 1000;
     margin: 20px 0;
     color: rgb(95, 121, 136);
+}
+
+
+/* crowd */
+
+.reports-crowd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reports-crowd img {
+    width: 700px;
+    /* height: 500px; */
 }

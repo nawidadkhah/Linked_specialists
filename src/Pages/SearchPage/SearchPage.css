@@ -29,7 +29,6 @@
     border-radius: 20px;
     border: 1.5px solid rgb(180, 30, 60);
     background-color: rgb(236, 180, 191);
-    ;
 }
 
 .search-div-items {
@@ -47,6 +46,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 15px 10px 30px;
+    cursor: pointer;
 }
 
 .search-page-button {
