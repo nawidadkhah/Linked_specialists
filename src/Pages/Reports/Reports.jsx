@@ -150,7 +150,7 @@ export const Reports = () => {
           </div>
         )}
         {isType.crowd && (
-          <div className="reports-crowd">
+          <div className="reports-crowds">
             <img src={worldWide} alt="world wide" />
           </div>
         )}
