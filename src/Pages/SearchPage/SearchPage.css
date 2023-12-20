@@ -1,53 +1,74 @@
-    .search-div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        direction: rtl;
-        width: 1000px;
-        margin: 50px auto;
-        border-radius: 20px;
-        border: 1.5px solid rgb(180, 30, 60);
-        background-color: rgb(236, 180, 191);
-        ;
-    }
-    
-    .search-div-items {
-        display: flex;
-        align-items: center;
-        margin: 10px 40px;
-    }
-    
-    .search-div-items label {
-        margin: 0 20px;
-    }
-    
-    .search-div-items select {
-        border: 1.5px solid rgb(180, 30, 60);
-        background-color: rgb(255, 255, 255);
-        border-radius: 10px;
-        padding: 10px 15px 10px 30px;
-    }
-    
-    .search-page-button {
-        padding: 5px 20px;
-        border: none;
-        color: #ffffff;
-        background-color: rgb(180, 30, 60);
-        border-radius: 6px;
-        box-shadow: 3px 4px 8px black;
-        cursor: pointer;
-        transition: .1s ease-in-out;
-        margin: 30px auto;
-        width: 80px;
-    }
-    
-    .search-page-button:active {
-        box-shadow: 1px 1px 6px black;
-        translate: .2rem;
-    }
-    
-    .search-items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    z-index: 6;
+    display: none;
+    transition: .3s ease-in;
+}
+
+
+/* .search-content {
+    overflow-: hidden;
+} */
+
+.search-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    direction: rtl;
+    width: 1000px;
+    margin: 50px auto;
+    border-radius: 20px;
+    border: 1.5px solid rgb(180, 30, 60);
+    background-color: rgb(236, 180, 191);
+    ;
+}
+
+.search-div-items {
+    display: flex;
+    align-items: center;
+    margin: 10px 40px;
+}
+
+.search-div-items label {
+    margin: 0 20px;
+}
+
+.search-div-items select {
+    border: 1.5px solid rgb(180, 30, 60);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 15px 10px 30px;
+}
+
+.search-page-button {
+    padding: 5px 20px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(180, 30, 60);
+    border-radius: 6px;
+    box-shadow: 3px 4px 8px black;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    margin: 30px auto;
+    width: 80px;
+}
+
+.search-page-button:active {
+    box-shadow: 1px 1px 6px black;
+    translate: .2rem;
+}
+
+.search-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

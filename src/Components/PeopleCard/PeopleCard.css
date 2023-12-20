@@ -1,12 +1,85 @@
 .peopleCard {
     width: 300px;
-    height: 400px;
     background-color: rgb(189, 225, 225);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 4px 4px 8px rgb(134, 126, 126);
 }
 
 .peopleCard-image {
+    margin: 30px auto 0;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(244, 86, 86);
+    border-radius: 50%;
+}
+
+.peopleCard-image img {
+    padding: 5px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    transition: .2s ease-in;
+}
+
+.peopleCard-image img:hover {
+    scale: 1.2;
+}
+
+.peopleCard-name {
+    margin: 30px auto 0;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.peopleCard-items {
+    margin: 20px 0 0;
+}
+
+.peopleCard-list {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.people-list-item {
+    padding: 5px 0 0 0;
+    font-style: normal;
+}
+
+.people-list-item::before {
+    content: "- ";
+}
+
+.people-list-item:first-child {
+    padding: 0 0 10px 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.people-list-item:first-child::before {
+    content: "";
+}
+
+.peopleCard-button {
     margin: 20px auto;
+}
+
+.peopleCard-button button {
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    transition: .1s ease-in-out;
+}
+
+.peopleCard-button button:active {
+    scale: .9;
 }
