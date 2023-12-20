@@ -1,0 +1,68 @@
+import React from 'react'
+import './Modal.css'
+import { IoHomeSharp } from "react-icons/io5";
+import { MdAlternateEmail } from "react-icons/md";
+import { FaPhoneFlip } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
+import '../../Pages/SearchPage/SearchPage.css'
+
+
+
+
+export const Modal = ({data}) => {
+    const handleExit=()=>{
+   document.querySelectorAll(".modal").forEach(function (el) {
+     el.style.display = "none";
+   });
+         document.body.style.overflow = "unset";
+
+    }
+  return (
+    <div>
+      <div className="modal">
+        <div className="modal-content">
+          <div className="modal-title">
+            <span onClick={handleExit}><RxCross2 /></span>
+            <span className='modal-city'>{data.city}</span>
+          </div>
+          <div className="modal-line"></div>
+          <div className="modal-inside">
+            <div className="modal-inside-image">
+              <img src={data.image} alt="ax" />
+            </div>
+            <div className="modal-inside-job">{data.job}</div>
+            <div className="modal-inside-info">
+              <div className="modal-inside-info-item">
+                <span>
+                  <IoHomeSharp />
+                </span>
+                <span>{data.city}</span>
+              </div>
+              <div className="modal-inside-info-item">
+                <span>
+                  <MdAlternateEmail />
+                </span>
+                <span>{data.email}</span>
+              </div>
+              <div className="modal-inside-info-item">
+                <span>
+                  <FaPhoneFlip />
+                </span>
+                <span>{data.phone}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+        //  university: "",
+        //  name: props.name,
+        //  image: ax,
+        //  job: "AI Professor",
+        //  city: "abs",
+        //  email: "nnd1380@gmail",
+        //  phone: "09109207102",
+        //  site: "www.ccc.com",
