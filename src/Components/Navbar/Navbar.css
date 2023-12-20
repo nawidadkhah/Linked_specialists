@@ -70,24 +70,22 @@
      top: 30px;
  }
  
- .items:nth-child(5):hover:before {
-     width: 100px;
-     background-color: aqua;
+ .items1:hover::before {
+     width: 55px;
  }
  
- .items:nth-child(4):hover:before {
-     width: 10px;
- }
- 
- .items:nth-child(3):hover:before {
-     width: 170px;
- }
- 
- .items:nth-child(2):hover:before {
+ .items2:hover::before {
      width: 150px;
  }
  
- .items:nth-child(1):hover:before {
-     background-color: aqua;
-     width: 60px;
+ .items3:hover:before {
+     width: 170px;
+ }
+ 
+ .items4:hover:before {
+     width: 150px;
+ }
+ 
+ .items5:hover:before {
+     width: 130px;
  }
