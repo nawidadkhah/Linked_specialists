@@ -1,0 +1,14 @@
+.process {
+    background-color: #c4dbf6;
+    height: 100vh;
+}
+
+.td-item {
+    display: flex;
+    direction: ltr;
+    justify-content: center;
+}
+
+.td-item::before {
+    /* content: "•"; */
+}
