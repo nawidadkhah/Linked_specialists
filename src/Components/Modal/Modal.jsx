@@ -1,24 +1,20 @@
-import React from 'react'
-import './Modal.css'
+import React from "react";
+import "./Modal.css";
 import { IoHomeSharp } from "react-icons/io5";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
-import wordCloud from '../../Images/wc.png'
-import graph from '../../Images/graph.jpg'
-import '../../Pages/SearchPage/SearchPage.css'
+import wordCloud from "../../Images/wc.png";
+import graph from "../../Images/graph.jpg";
+import "../../Pages/SearchPage/SearchPage.css";
 
-
-
-
-export const Modal = ({data}) => {
-    const handleExit=()=>{
-   document.querySelectorAll(".modal").forEach(function (el) {
-     el.style.display = "none";
-   });
-         document.body.style.overflow = "unset";
-
-    }
+export const Modal = ({ data }) => {
+  const handleExit = () => {
+    document.querySelectorAll(".modal").forEach(function (el) {
+      el.style.display = "none";
+    });
+    document.body.style.overflow = "unset";
+  };
   return (
     <div>
       <div className="modal">
@@ -31,9 +27,13 @@ export const Modal = ({data}) => {
           </div>
           <div className="modal-line" />
           <div className="modal-inside">
-            <div className="modal-inside-image">
-              <img src={data.image} alt="ax" />
+            <div className="modal-inside-name-image">
+              <div className="modal-inside-image">
+                <img src={data.image} alt="ax" />
+              </div>
+              <span>{data.name}</span>
             </div>
+
             <div className="modal-inside-job">{data.job}</div>
             <div className="modal-inside-info">
               <div className="modal-inside-info-item">
@@ -54,7 +54,7 @@ export const Modal = ({data}) => {
                 <span>
                   <FaPhoneFlip />
                 </span>
-                <span>{data.phone}</span>
+                <span className="modal-phone">{data.phone}</span>
               </div>
             </div>
           </div>
@@ -76,13 +76,13 @@ export const Modal = ({data}) => {
       </div>
     </div>
   );
-}
+};
 
-        //  university: "",
-        //  name: props.name,
-        //  image: ax,
-        //  job: "AI Professor",
-        //  city: "abs",
-        //  email: "nnd1380@gmail",
-        //  phone: "09109207102",
-        //  site: "www.ccc.com",
+//  university: "",
+//  name: props.name,
+//  image: ax,
+//  job: "AI Professor",
+//  city: "abs",
+//  email: "nnd1380@gmail",
+//  phone: "09109207102",
+//  site: "www.ccc.com",

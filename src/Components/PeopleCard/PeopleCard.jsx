@@ -13,34 +13,34 @@ export const PeopleCard = (props) => {
          document.body.style.overflow = "hidden";
 
        props.setData({
-         university: "شهید بهشتی",
+         university: props.university,
          name: props.name,
-         image: ax,
-         job: "استاد دانشگاه",
-         city: "آلبرتا، کانادا",
-         email: "nnd1380@gmail",
-         phone: "09109207102",
-         site: "www.ccc.com",
+         image: props.image,
+         job: props.job,
+         city: props.city,
+         email: props.email,
+         phone: props.phone,
+         site: props.site,
        });
     }
 
   return (
     <div className="peopleCard">
       <div className="peopleCard-image">
-        <img src={ax} alt="" />
+        <img src={props.image} alt="" />
       </div>
       <div className="peopleCard-name">{props.name}</div>
       <div className="peopleCard-items">
         <ul className="peopleCard-list">
           <i className="people-list-item">مهارت در حوزه:</i>
-          <i className="people-list-item">هوش مصنوعی</i>
-          <i className="people-list-item">بینایی کامپیوتر</i>
-          <i className="people-list-item">یادگیری ماشین</i>
+          <i className="people-list-item">{props.title1}</i>
+          <i className="people-list-item">{props.title2}</i>
+          <i className="people-list-item">{props.title3}</i>
         </ul>
       </div>
       <div className="peopleCard-button">
         {/* <Link to="/"> */}
-            <button onClick={handleClick}>دیدن پروفایل</button>
+        <button onClick={handleClick}>دیدن پروفایل</button>
         {/* </Link> */}
       </div>
     </div>
