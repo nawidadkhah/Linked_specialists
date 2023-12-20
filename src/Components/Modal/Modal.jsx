@@ -4,6 +4,8 @@ import { IoHomeSharp } from "react-icons/io5";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
+import wordCloud from '../../Images/wc.png'
+import graph from '../../Images/graph.jpg'
 import '../../Pages/SearchPage/SearchPage.css'
 
 
@@ -59,6 +61,16 @@ export const Modal = ({data}) => {
           <div className="modal-fotter">
             <div className="modal-fotter-2">لینک‌ها</div>
             <a href="Google.com">{data.site}</a>
+          </div>
+          <div className="modal-datas">
+            <div className="modal-word-cloud">
+              <span>Word Cloud</span>
+              <img src={wordCloud} alt="worldcloud" />
+            </div>
+            <div className="modal-graph">
+              <span>Graph</span>
+              <img src={graph} alt="graph" />
+            </div>
           </div>
         </div>
       </div>
