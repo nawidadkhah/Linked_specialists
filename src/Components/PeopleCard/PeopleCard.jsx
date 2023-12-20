@@ -13,7 +13,7 @@ export const PeopleCard = (props) => {
          document.body.style.overflow = "hidden";
 
        props.setData({
-         university: "",
+         university: "شهید بهشتی",
          name: props.name,
          image: ax,
          job: "استاد دانشگاه",

@@ -22,10 +22,12 @@ export const Modal = ({data}) => {
       <div className="modal">
         <div className="modal-content">
           <div className="modal-title">
-            <span onClick={handleExit}><RxCross2 /></span>
-            <span className='modal-city'>{data.city}</span>
+            <span onClick={handleExit}>
+              <RxCross2 />
+            </span>
+            <span className="modal-city">{data.university}</span>
           </div>
-          <div className="modal-line"></div>
+          <div className="modal-line" />
           <div className="modal-inside">
             <div className="modal-inside-image">
               <img src={data.image} alt="ax" />
@@ -42,7 +44,9 @@ export const Modal = ({data}) => {
                 <span>
                   <MdAlternateEmail />
                 </span>
-                <span>{data.email}</span>
+                <span>
+                  <a href="mailto:{webmaster@example.com}">{data.email}</a>
+                </span>
               </div>
               <div className="modal-inside-info-item">
                 <span>
@@ -51,6 +55,10 @@ export const Modal = ({data}) => {
                 <span>{data.phone}</span>
               </div>
             </div>
+          </div>
+          <div className="modal-fotter">
+            <div className="modal-fotter-2">لینک‌ها</div>
+            <a href="Google.com">{data.site}</a>
           </div>
         </div>
       </div>
