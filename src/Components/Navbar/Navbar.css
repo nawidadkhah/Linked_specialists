@@ -71,11 +71,12 @@
  }
  
  .items:nth-child(5):hover:before {
-     width: 130px;
+     width: 100px;
+     background-color: aqua;
  }
  
  .items:nth-child(4):hover:before {
-     width: 150px;
+     width: 10px;
  }
  
  .items:nth-child(3):hover:before {
@@ -87,5 +88,6 @@
  }
  
  .items:nth-child(1):hover:before {
-     width: 55px;
+     background-color: aqua;
+     width: 60px;
  }
