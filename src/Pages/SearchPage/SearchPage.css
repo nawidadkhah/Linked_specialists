@@ -45,3 +45,9 @@
         box-shadow: 1px 1px 6px black;
         translate: .2rem;
     }
+    
+    .search-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }

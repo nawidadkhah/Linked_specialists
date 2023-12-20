@@ -1,8 +1,10 @@
-import React from 'react'
-import { Navbar } from '../../Components/Navbar/Navbar'
-import './SearchPage.css'
+import React, { useState } from "react";
+import { Navbar } from "../../Components/Navbar/Navbar";
+import { PeopleCard } from "../../Components/PeopleCard/PeopleCard";
+import "./SearchPage.css";
 
 export const SearchPage = () => {
+  const [isSearch, SetisSearch] = useState(false);
   return (
     <div>
       <Navbar />
@@ -21,8 +23,14 @@ export const SearchPage = () => {
             <option value="ai">----------------------</option>
           </select>
         </div>
-        <button className='search-page-button'>جستجو</button>
+        <button className="search-page-button">جستجو</button>
+      </div>
+      <div className="search-items">
+        <PeopleCard name="ali"/>
+        <PeopleCard />
+        <PeopleCard />
+        <PeopleCard />
       </div>
     </div>
   );
-}
+};
