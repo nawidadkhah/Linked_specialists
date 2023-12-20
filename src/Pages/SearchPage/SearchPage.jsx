@@ -72,7 +72,7 @@ SetisSearch(true)
               setData={SetData}
               name="مرضیه قاسمی"
               image={ghasemi}
-              university="Stanford"
+              university="Stanford University"
               city="california University"
               job="Professor"
               email="dorsa@cs.stanford.edu"

@@ -23,6 +23,8 @@
     margin: 10px 0 0 50px;
     font-size: 30px;
     direction: rtl;
+    display: flex;
+    justify-content: space-between;
 }
 
 .modal-title span:first-child {
