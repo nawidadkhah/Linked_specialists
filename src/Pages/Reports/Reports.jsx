@@ -44,7 +44,7 @@ export const Reports = () => {
     }
   };
   return (
-    <div>
+    <div className="reports">
       <Navbar />
       <div className="reports-div">
         <div className="reports-div-items">

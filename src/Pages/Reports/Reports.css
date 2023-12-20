@@ -1,3 +1,8 @@
+/* .reports {
+    background-color: #c4dbf6;
+    height: 100vh;
+} */
+
 .reports-div {
     display: flex;
     flex-direction: row;

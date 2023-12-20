@@ -3,6 +3,7 @@ import { Home } from './Pages/Home/Home'
 import { SearchPage } from "./Pages/SearchPage/SearchPage";
 import { Reports } from './Pages/Reports/Reports';
 import { SpecialWord } from './Pages/SpecialWord/SpecialWord';
+import {Process} from './Pages/Process/Process.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/Search" element={<SearchPage />}></Route>
           <Route path="/Reports" element={<Reports />}></Route>
           <Route path="/Special-words" element={<SpecialWord />}></Route>
+          <Route path="/Process" element={<Process />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

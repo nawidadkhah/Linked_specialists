@@ -21,7 +21,7 @@ export const SearchPage = () => {
 SetisSearch(true)
   }
   return (
-    <div>
+    <div className="search">
       <Modal data={data} />
       <div className="search-content">
         <Navbar />

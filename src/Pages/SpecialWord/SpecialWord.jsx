@@ -8,7 +8,7 @@ export const SpecialWord = () => {
   const [isSearch, setIsSearch] = useState(false);
 
   return (
-    <div>
+    <div className='special'>
       <Navbar />
       <SearchCom
         title="حوزه تخصصی"

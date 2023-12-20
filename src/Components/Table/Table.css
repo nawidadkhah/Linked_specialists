@@ -2,6 +2,7 @@
     border-collapse: collapse;
     width: 70%;
     margin: 0 auto;
+    box-shadow: 10px 10px 30px rgb(244, 77, 77);
 }
 
 #customers td,
@@ -20,7 +21,7 @@
 }
 
 #customers tr:hover {
-    background-color: rgb(169, 30, 30);
+    background-color: rgb(213, 100, 100);
     color: aliceblue;
 }
 

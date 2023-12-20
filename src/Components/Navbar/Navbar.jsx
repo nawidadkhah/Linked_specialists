@@ -22,17 +22,13 @@ export const Navbar = () => {
           <span className="items">کلید واژه‌های تخصصی</span>
         </Link>
 
-        <span className="items">
-          تنظیمات مدیریت کاربران
-        </span>
-        <span className="items">
-  
-          روند علمی متخصصین
-        </span>
+        <span className="items">تنظیمات مدیریت کاربران</span>
+        <Link to="/Process">
+          <span className="items">روند علمی متخصصین</span>
+        </Link>
+
         <Link to="/Search">
-         <span className="items">
-            جستجوی متخصص
-          </span>
+          <span className="items">جستجوی متخصص</span>
         </Link>
       </ul>
     </div>

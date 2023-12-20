@@ -14,10 +14,10 @@
     transition: .3s ease-in;
 }
 
-
-/* .search-content {
-    overflow-: hidden;
-} */
+.search {
+    background-color: #c4dbf6;
+    height: 100vh;
+}
 
 .search-div {
     display: flex;
