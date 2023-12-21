@@ -79,10 +79,13 @@
     border-radius: 10px;
 }
 
-.password-toggle-icon {
-    top: 347px;
-    left: 280px;
-}
+
+/* .password-toggle-icon-manage {
+    top: 13px;
+    left: 90px;
+    padding: 0 40px 0 0px;
+    position: relative;
+} */
 
 #table {
     margin: 30px 0 0 0;

@@ -149,12 +149,12 @@ export const Manage = () => {
                   name="password"
                   placeholder="رمزعبور"
                 />
-                <span
-                  className="password-toggle-icon"
+                {/* <span
+                  className="password-toggle-icon-manage"
                   onClick={togglePasswordVisibility}
                 >
                   <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
-                </span>
+                </span> */}
               </div>
               <div className="input-row">
                 <div className="labels">
