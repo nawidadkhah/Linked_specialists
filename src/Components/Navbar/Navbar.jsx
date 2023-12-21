@@ -21,7 +21,10 @@ export const Navbar = () => {
         <Link to="/special-words">
           <span className="items items2">کلید واژه‌های تخصصی</span>
         </Link>
-        <span className="items items3">تنظیمات مدیریت کاربران</span>
+        <Link to="/Manage">
+          <span className="items items3">تنظیمات مدیریت کاربران</span>
+        </Link>
+
         <Link to="/Process">
           <span className="items items4">روند علمی متخصصین</span>
         </Link>
