@@ -198,7 +198,7 @@ export const Manage = () => {
             </tr>
           </table>
           <button
-            className="button"
+            className="button user-button"
             id="infoButton"
             type="submit"
             onClick={handleSubmit}
