@@ -1,0 +1,99 @@
+.manage {
+    background-color: #c4dbf6;
+    /* height: 100%; */
+}
+
+.Mange-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.Mange-buttons button {
+    margin: 0 30px;
+    padding: 10px 40px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(180, 30, 60);
+    border-radius: 6px;
+    box-shadow: 3px 4px 8px black;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.Mange-buttons button:hover {
+    color: #97c2f4;
+}
+
+.Mange-buttons button:active {
+    box-shadow: 1px 1px 6px black;
+    translate: .2rem;
+}
+
+
+/* user */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    direction: rtl;
+    width: 800px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: #ffffff73;
+    padding: 30px 0;
+}
+
+.inputs-content {
+    display: flex;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.labels {
+    font-size: 16px;
+    color: black;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.infoInput {
+    margin: 0 20px;
+    padding: 10px 10px;
+    justify-content: start;
+    outline: none;
+    border: 1px solid rgb(236, 126, 49);
+    border-radius: 10px;
+}
+
+.password-toggle-icon {
+    top: 347px;
+    left: 280px;
+}
+
+#customers {
+    margin: 30px 0 0 0;
+}
+
+.check-button {
+    cursor: pointer;
+    outline: none;
+}
+
+.button {
+    margin: 30px 0 0 0;
+    width: 220px;
+}
