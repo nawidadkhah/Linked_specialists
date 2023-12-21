@@ -21,11 +21,11 @@ export const SpecialWord = () => {
             firstTh="رصد تکرار در حوزه تخصصی"
             secTh="کلیدواژه"
             thirdTh="جایگاه"
-            firstTd1="Machine Learning"
-            firstTd2="90%"
+            firstTd1="90%"
+            firstTd2="Machine Learning"
             firstTd3="1"
-            secTd1="Image Processing"
-            secTd2="40%"
+            secTd1="40%"
+            secTd2="Image Processing"
             secTd3="2"
           />
         </div>

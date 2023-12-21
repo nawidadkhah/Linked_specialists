@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Navbar } from "../../Components/Navbar/Navbar.jsx";
-import {Table} from '../../Components/Table/Table.jsx'
+import { SearchCom } from "../../Components/SearchCom/SearchCom.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -50,6 +50,9 @@ export const Manage = () => {
     linkedin: false,
   });
   const handleFuture = (e) => {
+    document.querySelectorAll(".manage").forEach(function (el) {
+      el.style.height = "100%";
+    });
     if (e.target.value === "user") {
       setIsType({
         user: true,
@@ -166,7 +169,7 @@ export const Manage = () => {
               </div>
             </div>
           </div>
-          <table id="customers">
+          <table id="table">
             <tr>
               <th>ردیف</th>
               <th>حوزه تخصصی</th>
@@ -205,8 +208,122 @@ export const Manage = () => {
           <ToastContainer limit={5} rtl className={"notification"} />
         </form>
       )}
-      {isType.artifact && <p className="a">a</p>}
-      {isType.linkedin && <p className="a">salammmmmm</p>}
+      {isType.artifact && (
+        <div className="artifact">
+          <div className="search-com-div">
+            <div className="search-com-div-items">
+              <label for="search-com">نام ژورنال یا کنفرانس:</label>
+              <select id="search-com" name="search-com">
+                <option value="default"></option>
+                <option value="crowd">
+                  کنفرانس تحقیقاتی هوش مصنوعی سال 2021
+                </option>
+              </select>
+            </div>
+          </div>
+          <table id="table">
+            <tr>
+              <th>ردیف</th>
+              <th>درجه معتبر بودن</th>
+              <th>انتخاب</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>چارک 1</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>چارک 2</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>چارک 3</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>چارک 4</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+          </table>
+          <button
+            className="button arti-button"
+            id="infoButton"
+            type="submit"
+            // onClick={handleSubmit}
+          >
+            ثبت
+          </button>
+        </div>
+      )}
+      {isType.linkedin && (
+        <div className="artifact">
+          <div className="search-com-div">
+            <div className="search-com-div-items">
+              <label for="search-com">شغل:</label>
+              <select id="search-com" name="search-com">
+                <option value="default"></option>
+                <option value="crowd">
+             هوش مصنوعی  
+                </option>
+              </select>
+            </div>
+          </div>
+          <table id="table">
+            <tr>
+              <th>ردیف</th>
+              <th>درجه معتبر بودن</th>
+              <th>انتخاب</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>پراهمیت</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>خوب</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>متوسط</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>کم اهمیت</td>
+              <td>
+                <input type="checkbox" className="check-button" />
+              </td>
+            </tr>
+          </table>
+          <button
+            className="button arti-button"
+            id="infoButton"
+            type="submit"
+            // onClick={handleSubmit}
+          >
+            ثبت
+          </button>
+        </div>
+      )}
     </div>
   );
 };
