@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import "../../Components/Button/Button.jsx";
 import "./Auth.css";
+import { useNavigate } from "react-router-dom";
 
 export const Auth = () => {
+    const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -18,6 +20,7 @@ export const Auth = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     notify("کاربر با موفقیت وارد شد.", "success");
+    navigate('/home');
     // notify("رمزعبور یا نام کاربری اشتباه است.", "error")
   };
 
@@ -89,7 +92,6 @@ export const Auth = () => {
                   <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
                 </span>
               </div>
-              {/* <Link to="/home"> */}
               <button
                 className="button"
                 id="infoButton"
@@ -98,8 +100,6 @@ export const Auth = () => {
               >
                 <span>ورود</span>
               </button>
-              {/* </Link> */}
-              <ToastContainer limit={5} rtl className={"notification"} />
             </form>
           </div>
         </div>

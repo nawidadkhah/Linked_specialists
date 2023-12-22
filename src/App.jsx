@@ -6,6 +6,8 @@ import { SpecialWord } from './Pages/SpecialWord/SpecialWord';
 import {Process} from './Pages/Process/Process.jsx'
 import { Manage } from "./Pages/Manage/Manage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+
 import './App.css'
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
           <Route path="/Manage" element={<Manage />}></Route>
         </Routes>
       </BrowserRouter>
+      <ToastContainer limit={5} rtl className={"notification"} />
     </div>
   );
 }

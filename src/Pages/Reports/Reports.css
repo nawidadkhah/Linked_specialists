@@ -113,6 +113,6 @@
 
 /* crowd */
 
-.wordWide {
-    height: 250px;
+img.wordWide {
+    width: 640px;
 }
