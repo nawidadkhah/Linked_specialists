@@ -281,7 +281,7 @@ export const Manage = () => {
               جستجو شغل
             </button>
           </div>
-          <div className="search-com-div">
+          <div className="search-com-div search-linkedin">
             <div className="search-com-div-items">
               <label for="search-com">
                 {isLinkdinType.job ? "شغل:" : "تحصیل:"}
