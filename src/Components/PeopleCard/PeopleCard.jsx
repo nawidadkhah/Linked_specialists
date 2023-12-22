@@ -1,5 +1,4 @@
 import React from "react";
-import ax from '../../Images/about.jpg'
 import "./PeopleCard.css";
 import '../../Pages/SearchPage/SearchPage.css'
 

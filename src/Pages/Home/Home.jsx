@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from "react";
 import { Card } from "../../Components/Card/Card";
 import { Navbar } from "../../Components/Navbar/Navbar";
-import About from "../../Images/about.jpg";
 import { Count } from "../../Components/Count/Count";
 import sherkat1 from "../../Images/Related-ins/Untitled-fotor-bg-remover-20231218164543.png";
 import sherkat2 from "../../Images/Related-ins/logo.png";

@@ -63,7 +63,7 @@ export const Modal = ({ data }) => {
           </div>
           <div className="modal-fotter">
             <div className="modal-fotter-2">لینک‌ها</div>
-            <a href="Google.com">{data.site}</a>
+            <a href={data.site}>{data.site}</a>
           </div>
           <div className="modal-datas">
             <div className="modal-word-cloud">
