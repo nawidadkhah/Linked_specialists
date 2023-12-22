@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import gender from "../../Images/GENDER.jpg";
 import CountUp from "react-countup";
-import worldWide from '../../Images/world.jpg'
+import crowd from '../../Images/crowd.jpg'
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./Reports.css";
@@ -151,7 +151,7 @@ export const Reports = () => {
         )}
         {isType.crowd && (
           <div className="reports-crowds">
-            <img src={worldWide} alt="world wide" />
+            <img className="wordWide" src={crowd} alt="world wide" />
           </div>
         )}
       </div>

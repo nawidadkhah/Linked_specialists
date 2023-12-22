@@ -24,7 +24,7 @@
     flex-direction: row;
     justify-content: center;
     direction: rtl;
-    width: 1000px;
+    width: 1200px;
     margin: 50px auto;
     border-radius: 20px;
     border: 1.5px solid rgb(180, 30, 60);
@@ -34,7 +34,7 @@
 .search-div-items {
     display: flex;
     align-items: center;
-    margin: 10px 40px;
+    margin: 10px 30px;
 }
 
 .search-div-items label {

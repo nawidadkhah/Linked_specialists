@@ -21,14 +21,17 @@ export const PeopleCard = (props) => {
          email: props.email,
          phone: props.phone,
          site: props.site,
+         rate:props.rate
        });
     }
 
   return (
     <div className="peopleCard">
       <div className="peopleCard-image">
-        <img src={props.image} alt="" />
+        <img onClick={handleClick} src={props.image} alt="" />
       </div>
+      <div className="star" rate={props.rate}></div>
+
       <div className="peopleCard-name">{props.name}</div>
       <div className="peopleCard-items">
         <ul className="peopleCard-list">
@@ -39,9 +42,7 @@ export const PeopleCard = (props) => {
         </ul>
       </div>
       <div className="peopleCard-button">
-        {/* <Link to="/"> */}
         <button onClick={handleClick}>دیدن پروفایل</button>
-        {/* </Link> */}
       </div>
     </div>
   );

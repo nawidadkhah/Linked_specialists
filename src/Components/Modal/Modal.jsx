@@ -21,7 +21,7 @@ export const Modal = ({ data }) => {
         <div className="modal-content">
           <div className="modal-title">
             <span onClick={handleExit}>
-              <RxCross2 />
+              <RxCross2 size={40} />
             </span>
             <span className="modal-city">{data.university}</span>
           </div>
@@ -34,7 +34,10 @@ export const Modal = ({ data }) => {
               <span>{data.name}</span>
             </div>
 
-            <div className="modal-inside-job">{data.job}</div>
+            <div className="modal-inside-job">
+              <span>{data.job}</span>
+              <span className="star" rate={data.rate}></span>
+            </div>
             <div className="modal-inside-info">
               <div className="modal-inside-info-item">
                 <span>
@@ -64,11 +67,11 @@ export const Modal = ({ data }) => {
           </div>
           <div className="modal-datas">
             <div className="modal-word-cloud">
-              <span>Word Cloud</span>
+              <span>کلیدواژه‌های تخصصی</span>
               <img src={wordCloud} alt="worldcloud" />
             </div>
             <div className="modal-graph">
-              <span>Graph</span>
+              <span>گراف همکاران</span>
               <img src={graph} alt="graph" />
             </div>
           </div>

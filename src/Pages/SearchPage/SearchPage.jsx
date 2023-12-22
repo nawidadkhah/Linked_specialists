@@ -48,6 +48,15 @@ SetisSearch(true)
               <option value="ai">----------------------</option>
             </select>
           </div>
+          <div className="search-div-items">
+            <label for="specialWord">ایرانی:</label>
+            {/* <input type="checkbox" name="" id="" /> */}
+            <input type="radio" />
+          </div>
+          <div className="search-div-items">
+            <label for="specialWord">خارجی:</label>
+            <input type="radio" />
+          </div>
           <button className="search-page-button" onClick={handleSearch}>
             جستجو
           </button>
@@ -64,6 +73,7 @@ SetisSearch(true)
               email="ghobadi@csail.mit.edu"
               phone=""
               site="http://people.csail.mit.edu/ghobadi/"
+              rate="42"
               title1="سیستم های یادگیری ماشین"
               title2="شبکه سازی داده های مرکزی"
               title3="بهینه سازی شبکه "
@@ -78,6 +88,7 @@ SetisSearch(true)
               email="dorsa@cs.stanford.edu"
               phone="(617) 253-4030"
               site="https://dorsa.fyi/"
+              rate="94"
               title1="هوش مصنوعی"
               title2="Big Data"
               title3="يادگيري ماشين رفتاري"
@@ -92,6 +103,7 @@ SetisSearch(true)
               email="dorsa@cs.stanford.edu"
               phone=""
               site="https://dorsa.fyi/"
+              rate="83"
               title1="رباتیک"
               title2="یادگیری ماشین"
               title3="تئوری کنترل"
@@ -106,6 +118,7 @@ SetisSearch(true)
               email="sahami@cs.stanford.edu"
               phone="(650) 723-6059"
               site="http://web.eecs.umich.edu/~mozafari/"
+              rate="97"
               title1="علوم کامپیوتر"
               title2="یادگیری ماشین"
               title3="بازیابی اطلاعات در وب"
@@ -120,6 +133,7 @@ SetisSearch(true)
               email="madooei@jhu.edu"
               phone="(410) 516-7708"
               site="https://www.cs.jhu.edu/faculty/ali-madooei/"
+              rate="57"
               title1="بینایی ماشین"
               title2="یادگیری ماشین"
               title3=" پردازش تصویر پزشکی "
@@ -134,6 +148,7 @@ SetisSearch(true)
               email="mahyarfazlyab@jhu.edu"
               phone="(410) 516-7031"
               site="https://www.ece.jhu.edu/mahyarfazlyab/"
+              rate="98"
               title1="بهینه سازی"
               title2="یادگیری ماشین"
               title3="نظریه کنترل"
@@ -148,6 +163,7 @@ SetisSearch(true)
               email="mozafari@umich.edu"
               phone="(347) 763-3669"
               site="https://www.ece.jhu.edu/mahyarfazlyab/"
+              rate="76"
               title1="سیستم های قابل پیش بینی"
               title2="یادگیری ماشین"
               title3="محاسبات تقریبی "
@@ -162,6 +178,7 @@ SetisSearch(true)
               email="sahand.negahban@yale.edu"
               phone="(203) 432-0639"
               site="https://sahandnegahban.com/"
+              rate="39"
               title1="پردازش سیگنال"
               title2="یادگیری ماشین"
               title3="سنجش فشرده"

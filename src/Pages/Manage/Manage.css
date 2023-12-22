@@ -31,6 +31,33 @@
     translate: .2rem;
 }
 
+.linkedin-buttons {
+    display: flex;
+    margin: 20px 0;
+}
+
+.linkedin-buttons button {
+    padding: 0 20px;
+    margin: 10px 70px;
+    padding: 10px 40px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(180, 30, 60);
+    border-radius: 6px;
+    box-shadow: 3px 4px 8px black;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.linkedin-buttons button:hover {
+    color: #97c2f4;
+}
+
+.linkedin-buttons button:active {
+    box-shadow: 1px 1px 6px black;
+    translate: .2rem;
+}
+
 
 /* user */
 

@@ -35,11 +35,11 @@ img {
 
 .title {
     margin: 0px -70px;
-    font-size: 14px;
+    /* font-size: 14px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: IranSans;
+    /* font-family: IranSans; */
     color: aliceblue;
 }
 
@@ -50,29 +50,19 @@ img {
 }
 
 .inputs {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .inputs input {
-    margin: 10px auto;
+    margin: 0px auto 10px auto;
     border-radius: 8px;
     border: 1px solid rgb(219, 91, 45);
     outline: none;
     padding: 6px 8px;
 }
 
-.labels {
+.lablesAuth {
     color: aliceblue;
-}
-
-.labels2 {
-    color: aliceblue;
-    font-family: IranSans;
-    width: 100%;
-}
-
-.notification {
-    height: 0%;
 }
 
 .password-input-container {
@@ -83,7 +73,7 @@ img {
 
 .password-toggle-icon {
     position: absolute;
-    top: 30px;
+    top: 20px;
     margin: 0 -25px 0 90px;
     z-index: 1;
     transform: translateY(-50%);

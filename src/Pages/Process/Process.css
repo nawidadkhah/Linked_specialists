@@ -6,9 +6,9 @@
 .td-item {
     display: flex;
     direction: ltr;
-    justify-content: center;
 }
 
-.td-item::before {
-    /* content: "•"; */
+td span::before {
+    margin: 0 10px;
+    content: "• ";
 }

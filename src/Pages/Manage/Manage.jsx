@@ -1,18 +1,9 @@
 import React, { useState } from "react";
 import { Navbar } from "../../Components/Navbar/Navbar.jsx";
-import { SearchCom } from "../../Components/SearchCom/SearchCom.jsx";
 import { ToastContainer, toast } from "react-toastify";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "./Manage.css";
 
 export const Manage = () => {
-  const [showPassword, setShowPassword] = useState(false);
-
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     notify("کاربر با موفقیت ایجاد شد.", "success");
@@ -49,6 +40,26 @@ export const Manage = () => {
     artifact: false,
     linkedin: false,
   });
+
+  const [isLinkdinType, setIsLinkdinType] = useState({
+    job: true,
+    education: false,
+  });
+
+  const handleLinkedin=(e) =>{
+      if (e.target.value === "job") {
+        setIsLinkdinType({
+          job: true,
+          education: false,
+        });
+      }
+      if (e.target.value === "education") {
+        setIsLinkdinType({
+          job: false,
+          education: true,
+        });
+      }
+  }
   const handleFuture = (e) => {
     document.querySelectorAll(".manage").forEach(function (el) {
       el.style.height = "100%";
@@ -79,14 +90,14 @@ export const Manage = () => {
     <div className="manage">
       <Navbar />
       <div className="Mange-buttons">
-        <button value="user" onClick={handleFuture}>
-          تعریف کاربر
-        </button>
         <button value="artifact" onClick={handleFuture}>
           تنظیمات مقاله
         </button>
         <button value="linkedin" onClick={handleFuture}>
           تنظیمات لینکدین
+        </button>
+        <button value="user" onClick={handleFuture}>
+          تعریف کاربر
         </button>
       </div>
       {isType.user && (
@@ -144,17 +155,11 @@ export const Manage = () => {
                   <label htmlFor="password">رمزعبور:</label>
                 </div>
                 <input
-                  type={showPassword ? "text" : "password"}
+                  type="password"
                   className="infoInput"
                   name="password"
                   placeholder="رمزعبور"
                 />
-                {/* <span
-                  className="password-toggle-icon-manage"
-                  onClick={togglePasswordVisibility}
-                >
-                  <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
-                </span> */}
               </div>
               <div className="input-row">
                 <div className="labels">
@@ -268,14 +273,22 @@ export const Manage = () => {
       )}
       {isType.linkedin && (
         <div className="artifact">
+          <div className="linkedin-buttons">
+            <button value="job" onClick={handleLinkedin}>
+              جستجو تحصیل
+            </button>
+            <button value="education" onClick={handleLinkedin}>
+              جستجو شغل
+            </button>
+          </div>
           <div className="search-com-div">
             <div className="search-com-div-items">
-              <label for="search-com">شغل:</label>
+              <label for="search-com">
+                {isLinkdinType.job ? "شغل:" : "تحصیل:"}
+              </label>
               <select id="search-com" name="search-com">
                 <option value="default"></option>
-                <option value="crowd">
-             هوش مصنوعی  
-                </option>
+                <option value="crowd">هوش مصنوعی</option>
               </select>
             </div>
           </div>
@@ -287,28 +300,42 @@ export const Manage = () => {
             </tr>
             <tr>
               <td>1</td>
-              <td>پراهمیت</td>
+              <td>
+                {isLinkdinType.job ? "پراهمیت" : "در بین 100 دانشگاه برتر دنیا"}
+              </td>
               <td>
                 <input type="checkbox" className="check-button" />
               </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>خوب</td>
+              <td>
+                {isLinkdinType.job
+                  ? "خوب"
+                  : "در بین  100-200 دانشگاه برتر دنیا"}
+              </td>
               <td>
                 <input type="checkbox" className="check-button" />
               </td>
             </tr>
             <tr>
               <td>3</td>
-              <td>متوسط</td>
+              <td>
+                {isLinkdinType.job
+                  ? "متوسط"
+                  : "در بین  200-500 دانشگاه برتر دنیا"}
+              </td>
               <td>
                 <input type="checkbox" className="check-button" />
               </td>
             </tr>
             <tr>
               <td>4</td>
-              <td>کم اهمیت</td>
+              <td>
+                {isLinkdinType.job
+                  ? "کم اهمیت"
+                  : "بالاتر از 500"}
+              </td>
               <td>
                 <input type="checkbox" className="check-button" />
               </td>
